@@ -2,6 +2,7 @@
   --nav-background: #ffa8ba;
   --nav-btn-background: #faae2b;
   --nav-btn-color: #00473e;
+  --nav-btn-hover: #fa5246;
   --content-background: #f2f7f5;
   --main-header-color: #00473e;
   --card-background: #fffffe;
@@ -56,6 +57,18 @@ nav button {
     source-sans-pro, sans-serif;
   font-weight: bold;
   font-size: 1.4rem;
+}
+
+nav button:hover {
+  background-color: var(--nav-btn-hover);
+  border: 1px solid var(--nav-btn-hover);
+}
+
+.active,
+.active:hover {
+  background-color: var(--content-background);
+  border: 1px solid var(--content-background);
+  box-shadow: 2px 4px 10px var(--content-background);
 }
 
 #content {
