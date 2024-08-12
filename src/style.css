@@ -1,7 +1,14 @@
 :root {
   --nav-background: #ffa8ba;
-  --nav-btn-background: #f2f7f5;
+  --nav-btn-background: #faae2b;
   --nav-btn-color: #00473e;
+  --content-background: #f2f7f5;
+  --main-header-color: #00473e;
+  --card-background: #fffffe;
+  --card-header-color: #00473e;
+  --card-description-color: #475d5b;
+  --card-extra-color: #fa5246;
+  --card-border-color: #00332c;
 }
 
 html {
@@ -49,4 +56,63 @@ nav button {
     source-sans-pro, sans-serif;
   font-weight: bold;
   font-size: 1.4rem;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  background-color: var(--content-background);
+  flex: 1;
+}
+
+.main-header {
+  align-self: center;
+  font-family: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052,
+    serif;
+  font-size: 4rem;
+  color: var(--main-header-color);
+}
+
+.sushi-hero {
+  align-self: center;
+  max-width: 100%;
+  height: auto;
+}
+
+.cards {
+  margin: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.card {
+  width: 300px;
+  padding: 1rem 2.5rem;
+  text-align: center;
+  border: 1px dotted var(--card-border-color);
+  border-radius: 8px;
+  background-color: var(--card-background);
+}
+
+.card h3 {
+  font-family: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052,
+    serif;
+  font-size: 2.5rem;
+  color: var(--card-header-color);
+}
+
+.card p {
+  font-family: Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans",
+    source-sans-pro, sans-serif;
+  font-size: 1.5rem;
+  color: var(--card-description-color);
+}
+
+.card h4 {
+  font-family: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052,
+    serif;
+  font-size: 2rem;
+  color: var(--card-extra-color);
 }
