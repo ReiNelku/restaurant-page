@@ -8,7 +8,7 @@ import "./style.css";
 
   const homeTab = document.querySelector("#home");
   homeTab.classList.add("active");
-  displayAboutUsMenu();
+  displayHome();
   homeTab.addEventListener("click", createNavTabEventListeners);
 
   const menuTab = document.querySelector("#menu");
