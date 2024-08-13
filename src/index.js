@@ -1,5 +1,6 @@
 import displayHome from "./home.js";
 import displayMenu from "./menu.js";
+import displayAboutUsMenu from "./about-us.js";
 import "./style.css";
 
 (function () {
@@ -7,11 +8,14 @@ import "./style.css";
 
   const homeTab = document.querySelector("#home");
   homeTab.classList.add("active");
-  displayHome();
+  displayAboutUsMenu();
   homeTab.addEventListener("click", createNavTabEventListeners);
 
   const menuTab = document.querySelector("#menu");
   menuTab.addEventListener("click", createNavTabEventListeners);
+
+  const aboutUsTab = document.querySelector("#about");
+  aboutUsTab.addEventListener("click", createNavTabEventListeners);
 })();
 
 function createNavTabEventListeners() {
@@ -27,6 +31,11 @@ function createNavTabEventListeners() {
     case "Menu":
       this.classList.add("active");
       displayMenu();
+      break;
+
+    case "About Us":
+      this.classList.add("active");
+      displayAboutUsMenu();
       break;
   }
 }

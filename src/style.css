@@ -93,6 +93,7 @@ nav button:hover {
   align-self: center;
   max-width: 100%;
   height: auto;
+  border-radius: 8px;
 }
 
 .cards {
@@ -118,7 +119,8 @@ nav button:hover {
   color: var(--card-header-color);
 }
 
-.card p {
+.card p,
+.about-us-text {
   font-family: Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans",
     source-sans-pro, sans-serif;
   font-size: 1.5rem;
@@ -152,7 +154,8 @@ nav button:hover {
   background-color: var(--card-background);
 }
 
-.menu-card > h3 {
+.menu-card > h3,
+.about-us-header {
   font-family: Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans",
     source-sans-pro, sans-serif;
   font-size: 2rem;
@@ -201,4 +204,17 @@ nav button:hover {
 
 .menu-card > p {
   text-align: center;
+}
+
+.about-us {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 1.5rem;
+}
+
+.about-us-text {
+  align-self: center;
+  text-align: center;
+  width: 60ch;
 }
