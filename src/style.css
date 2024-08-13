@@ -79,7 +79,9 @@ nav button:hover {
   flex: 1;
 }
 
-.main-header {
+.main-header,
+.menu-category > h2 {
+  margin-top: 3rem;
   align-self: center;
   font-family: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052,
     serif;
@@ -128,4 +130,75 @@ nav button:hover {
     serif;
   font-size: 2rem;
   color: var(--card-extra-color);
+}
+
+.menu-category {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-card {
+  flex-basis: 250px;
+  display: flex;
+  flex-direction: column;
+  border: 1px dotted var(--card-border-color);
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  background-color: var(--card-background);
+}
+
+.menu-card > h3 {
+  font-family: Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans",
+    source-sans-pro, sans-serif;
+  font-size: 2rem;
+  color: var(--card-header-color);
+  text-align: center;
+}
+
+.menu-card > img {
+  align-self: center;
+  width: 200px;
+  border-radius: 8px;
+}
+
+.menu-card > ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style-type: none;
+  justify-items: center;
+  padding-left: 0;
+}
+
+.menu-card > ul > li,
+.menu-card > p {
+  font-family: Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans",
+    source-sans-pro, sans-serif;
+  font-size: 1.2rem;
+  color: var(--card-description-color);
+}
+
+.menu-card > ul > li {
+  padding: 0.5rem;
+  border: 1px solid var(--card-extra-color);
+  border-radius: 8px;
+}
+
+.menu-card > h4 {
+  /* margin-bottom: 1rem; */
+  font-family: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052,
+    serif;
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--card-extra-color);
+}
+
+.menu-card > p {
+  text-align: center;
 }
